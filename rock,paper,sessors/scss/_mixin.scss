@@ -1,0 +1,33 @@
+@mixin shadow(){
+    text-shadow: 3px 3px 10px;
+}
+@mixin gameButtons(){
+    width: 140px;
+    height: 140px;
+    font-size: 70px;
+    border-radius: 70px;
+    border: 10px solid ;
+    cursor: pointer;
+    transition: 0.40s;
+    margin: 10px 10px ;
+    &:hover{
+        box-shadow: 3px 3px 10px;
+        transition: 0.4s;
+        }
+        &:active{
+            box-shadow: 3px 3px 10px white;
+        }
+       
+}
+@mixin endWindow(){
+    font-size: 30px;
+    border: 10px solid ;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 500px;
+
+
+}

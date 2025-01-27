@@ -1,0 +1,233 @@
+body {
+  background-color: #21395e;
+  font-family: arial;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.head {
+  color: #ffffff;
+  border: 5px;
+  text-align: center;
+  word-spacing: 30px;
+  text-shadow: 3px 3px 10px;
+}
+
+.score-table {
+  color: #ffffff;
+  margin: 50px 20px 0px;
+}
+.score-table p {
+  font-size: large;
+  text-shadow: 3px 3px 10px;
+}
+
+.rock-button {
+  width: 140px;
+  height: 140px;
+  font-size: 70px;
+  border-radius: 70px;
+  border: 10px solid;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 10px 10px;
+  border-color: rgb(76.5, 76.5, 255);
+}
+.rock-button:hover {
+  box-shadow: 3px 3px 10px;
+  transition: 0.4s;
+}
+.rock-button:active {
+  box-shadow: 3px 3px 10px white;
+}
+
+.paper-button {
+  width: 140px;
+  height: 140px;
+  font-size: 70px;
+  border-radius: 70px;
+  border: 10px solid;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 10px 10px;
+  border-color: rgb(255, 76.5, 76.5);
+}
+.paper-button:hover {
+  box-shadow: 3px 3px 10px;
+  transition: 0.4s;
+}
+.paper-button:active {
+  box-shadow: 3px 3px 10px white;
+}
+
+.scissors-button {
+  width: 140px;
+  height: 140px;
+  font-size: 70px;
+  border-radius: 70px;
+  border: 10px solid;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 10px 10px;
+  border-color: rgb(255, 192, 76.5);
+}
+.scissors-button:hover {
+  box-shadow: 3px 3px 10px;
+  transition: 0.4s;
+}
+.scissors-button:active {
+  box-shadow: 3px 3px 10px white;
+}
+
+.result {
+  font-size: 20px;
+  margin: 20px 20px;
+  color: #ffffff;
+}
+
+.menu-buttons {
+  margin: 20px 20px 40px;
+}
+.menu-buttons .menu-design {
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+  background-color: black;
+  color: #ffffff;
+}
+.menu-buttons .save {
+  text-shadow: 0px 5px 10px #4d4dff;
+  transition: 0.2s;
+}
+.menu-buttons .save:hover {
+  box-shadow: inset 0px 1px 10px #ffffff;
+  transition: 0.2s;
+}
+.menu-buttons .save:active {
+  box-shadow: inset 0px 1px 10px #4d4dff;
+  transition: 0.2s;
+}
+.menu-buttons .load {
+  text-shadow: 0px 5px 10px #4d4dff;
+  transition: 0.2s;
+}
+.menu-buttons .load:hover {
+  box-shadow: inset 0px 1px 10px #ffffff;
+  transition: 0.2s;
+}
+.menu-buttons .load:active {
+  box-shadow: inset 0px 1px 10px #4d4dff;
+  transition: 0.2s;
+}
+.menu-buttons .reset {
+  text-shadow: 0px 5px 10px #ff4d4d;
+  transition: 0.2s;
+}
+.menu-buttons .reset:hover {
+  box-shadow: inset 0px 1px 10px #ffffff;
+  transition: 0.2s;
+}
+.menu-buttons .reset:active {
+  box-shadow: inset 0px 1px 10px #ff4d4d;
+  transition: 0.2s;
+}
+.menu-buttons .end {
+  text-shadow: 0px 5px 10px #ffc04d;
+  transition: 0.2s;
+}
+.menu-buttons .end:hover {
+  box-shadow: inset 0px 1px 10px #ffffff;
+  transition: 0.2s;
+}
+.menu-buttons .end:active {
+  box-shadow: inset 0px 1px 10px #ffc04d;
+  transition: 0.2s;
+}
+
+.endGame-window {
+  background-color: #ffffff;
+  width: 30vb;
+  display: none;
+  font-size: 30px;
+  border: 10px solid;
+  cursor: pointer;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  top: 500px;
+}
+.endGame-window h2 {
+  color: #ff4d4d;
+}
+.endGame-window p {
+  color: #4d4dff;
+}
+.endGame-window .menu-design {
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+  background-color: black;
+  color: #ffffff;
+}
+.endGame-window .play {
+  text-shadow: 0px 5px 10px #ffc04d;
+  transition: 0.2s;
+}
+.endGame-window .play:hover {
+  box-shadow: inset 0px 1px 10px #ffffff;
+  transition: 0.2s;
+}
+.endGame-window .play:active {
+  box-shadow: inset 0px 1px 10px #ffc04d;
+  transition: 0.2s;
+}
+
+.endGame-popup {
+  background-color: #ffffff;
+  width: 30vb;
+  font-size: 30px;
+  border: 10px solid;
+  cursor: pointer;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  top: 500px;
+}
+.endGame-popup h2 {
+  color: #ff4d4d;
+}
+.endGame-popup p {
+  color: #4d4dff;
+}
+.endGame-popup .menu-design {
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+  background-color: black;
+  color: #ffffff;
+}
+.endGame-popup .play {
+  text-shadow: 0px 5px 10px #ffc04d;
+  transition: 0.2s;
+}
+.endGame-popup .play:hover {
+  box-shadow: inset 0px 1px 10px #ffffff;
+  transition: 0.2s;
+}
+.endGame-popup .play:active {
+  box-shadow: inset 0px 1px 10px #ffc04d;
+  transition: 0.2s;
+}
+
+/*# sourceMappingURL=style.css.map */
